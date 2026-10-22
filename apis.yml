@@ -1,23 +1,96 @@
 aid: mirvac
+
 name: Mirvac
-description: 'Mirvac is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Mirvac is an Australian property group listed on the Australian Securities Exchange (ASX top 100), founded in
+  1972, with an integrated asset creation and curation capability focused on Sydney, Melbourne, Canberra, Brisbane and Perth.
+  It develops and manages residential, retail, office & industrial, build to rent and funds management assets. No public developer
+  API, API documentation or machine-readable API contract was found on its website (surfaced via the australia-apidays-2026
+  harvest).
+
 url: https://raw.githubusercontent.com/api-evangelist/mirvac/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
-modified: '2026-10-21'
+
+modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Real Estate
+- Property Development
+- Property Management
+- Funds Management
+- Build To Rent
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://mirvac-cdn-web.azureedge.net/-/media/project/mirvac/corporate/main-site/corporate-theme/images/icons/mirvac-logo-footer.png
+
 common:
+- type: Hosts
+  url: hosts/mirvac-hosts.yml
+- type: DomainSecurity
+  url: security/mirvac-domain-security.yml
 - type: Website
-  url: https://mirvac.com/
+  url: https://www.mirvac.com/
+- type: Blog
+  url: https://www.mirvac.com/office-and-industrial/blog
+- type: Newsroom
+  url: https://www.mirvac.com/about/news-and-media
+- type: Support
+  url: https://www.mirvac.com/contact/Contact-Us
+- type: InvestorRelations
+  url: https://www.mirvac.com/investor-centre
+- type: Careers
+  url: https://www.mirvac.com/careers
+- type: Sustainability
+  url: https://www.mirvac.com/sustainability
+- type: TermsOfService
+  url: https://www.mirvac.com/conditions-of-use
+- type: PrivacyPolicy
+  url: https://www.mirvac.com/privacy-policy
+- type: LinkedIn
+  url: https://au.linkedin.com/company/mirvac
+- type: X
+  url: https://x.com/Mirvac
+- type: YouTube
+  url: https://www.youtube.com/user/mirvacgroup
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website and description verified from www.mirvac.com homepage and About page; no developer portal, docs, API reference,
+    or llms.txt published (/llms.txt, /developers, /api return 404).
+  evidence:
+  - url: https://www.mirvac.com/
+    status: 200
+  - url: https://www.mirvac.com/about/about-mirvac
+    status: 200
+  - url: https://www.mirvac.com/llms.txt
+    status: 404
+  - url: https://www.mirvac.com/developers
+    status: 404
+  - url: https://www.mirvac.com/api
+    status: 404
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

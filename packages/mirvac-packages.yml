@@ -1,0 +1,11 @@
+name: Mirvac packages
+generated: '2026-10-22'
+method: none
+note: Checked first-party package registries for "mirvac" on 2026-10-22; none found. Mirvac publishes no developer API, SDK or CLI.
+checked:
+- https://registry.npmjs.org/-/v1/search?text=mirvac&size=5 (200, total 0)
+- https://pypi.org/pypi/mirvac/json (404)
+- https://rubygems.org/api/v1/search.json?query=mirvac (200, [])
+- https://crates.io/api/v1/crates?q=mirvac (200, total 0)
+- https://api.github.com/orgs/Mirvac/repos (200, no public repos)
+packages: []

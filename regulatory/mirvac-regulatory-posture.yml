@@ -1,0 +1,101 @@
+generated: '2026-10-22'
+method: searched
+source: https://www.mirvac.com/privacy-policy
+note: >-
+  Read from Mirvac's own Group Privacy Policy (page footer "Updated September 2026"), Conditions of Use and
+  Accessibility & Language Statement. Mirvac is an Australian property group; the policy is written to the
+  Australian Privacy Act 1988 and Australian Privacy Principles. The pages say nothing about subprocessor
+  lists, AI use, incident/breach notification to individuals, Global Privacy Control or Do Not Track, SBOMs
+  or transparency reports, so no signal is recorded for those.
+signals:
+  data_subject_request:
+    url: https://www.mirvac.com/privacy-policy
+    section: '8 Access to your Personal Information'
+    channel: Mirvac Privacy Officer (contact details in the policy)
+    rights_named: [access, correction, complaint]
+    stated_sla: complaints acknowledged within a week; investigated and responded to within 30 days in most cases
+    escalation: Office of the Australian Information Commissioner; AFCA for Mirvac Property Trust matters
+    evidence:
+    - source: https://www.mirvac.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        You are entitled to access your personal information, including any sensitive information in relation
+        to you, held by Mirvac on request. To request access to this information, please contact the Mirvac
+        Privacy Officer (refer to contact details in Section 11). Mirvac will require evidence to verify your
+        identity prior to determining if your request can be fulfilled.
+    - source: https://www.mirvac.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        If you consider any personal information we hold about you is inaccurate, out-of-date, incomplete,
+        irrelevant or misleading you are entitled to request the correction of your personal information by
+        contacting the Mirvac Privacy Officer (refer to contact details below). After receiving a request from
+        you, we will take reasonable steps to correct your information.
+    - source: https://www.mirvac.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        In most cases, we will investigate and respond to a complaint within 30 days of receipt of the
+        complaint. If the matter is more complex or our investigation may take longer, we will let you know.
+    note: >-
+      Access and correction rights under the Australian Privacy Principles, exercised through a named Privacy
+      Officer, with identity verification. No deletion or portability right is named generally; removal is
+      offered only for unsuccessful job applicants' data. The 30-day figure is for complaints, not for access
+      requests.
+  data_residency:
+    url: https://www.mirvac.com/privacy-policy
+    section: 'Disclosures of personal information to overseas recipients; Appendix - Disclosure to other countries'
+    jurisdictions_named: [United States of America, Japan, Philippines, United Kingdom, Ireland, India]
+    evidence:
+    - source: https://www.mirvac.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        From time to time, Mirvac may disclose personal information to external third parties located outside
+        of Australia. These currently include organisations located in the countries listed in the Appendix to
+        this Policy. Mirvac will only disclose personal information overseas in accordance with the Privacy Act.
+    - source: https://www.mirvac.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Mirvac stores information in paper-based files or electronic record keeping methods in secure databases
+        (including trusted third party storage providers based in Australia and overseas).
+    note: >-
+      No residency commitment: data is stored in Australia and overseas, and the appendix (dated 18 September
+      2025) names six jurisdictions where third-party service providers may receive personal information. This
+      is a country list, not a named subprocessor list.
+  data_retention:
+    url: https://www.mirvac.com/privacy-policy
+    section: '10 Retention of Personal Information'
+    evidence:
+    - source: https://www.mirvac.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Where we no longer need to use or disclose your personal information for any purpose required under the
+        Privacy Act, this Policy, or where we are not otherwise legally required to retain that information, we
+        will take reasonable steps to either destroy or de-identify personal information.
+    - source: https://www.mirvac.com/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        If your application is unsuccessful, Mirvac may retain your personal information for a reasonable
+        period, to consider you if a more appropriate opportunity becomes available. Where you do not want us to
+        do so, you can request the removal of this information.
+    note: Purpose-bound retention with destruction or de-identification afterwards. No fixed retention periods are stated.
+  accessibility_conformance:
+    url: https://www.mirvac.com/contact/accessibility-statement
+    section: 'Accessibility & Language Statement'
+    standard: WCAG level AA (target, not claimed)
+    evidence:
+    - source: https://www.mirvac.com/contact/accessibility-statement
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Mirvac uses a third party to to assist us in working to the Web Content Accessibility Guidelines.
+        Whilst we endeavour to meet AA level standards, this is a goal we are continually working towards, and
+        cannot guarantee that all content meets this standard.
+    note: >-
+      A WCAG AA goal with an explicit disclaimer. This is not a conformance claim. The statement links to an
+      accessibility feedback form.

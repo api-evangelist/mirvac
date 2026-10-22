@@ -1,0 +1,32 @@
+name: Mirvac MCP Server
+type: MCPServer
+generated: '2026-10-22'
+method: none
+source:
+- https://www.mirvac.com/.well-known/mcp.json
+- https://www.mirvac.com/llms.txt
+description: >-
+  Checked for an official Mirvac MCP server and found none. https://www.mirvac.com/.well-known/mcp.json,
+  https://www.mirvac.com/llms.txt and https://www.mirvac.com/AGENTS.md all returned HTTP 404 on 2026-10-22.
+  Pre-flight contract discovery (2026-10-21) on mirvac.com, api.mirvac.com, 7spencer.mirvac.com,
+  everdene.mirvac.com and firsthome.mirvac.com found no OpenAPI, AsyncAPI, GraphQL or MCP surface; the /mcp
+  paths on 7spencer.mirvac.com and firsthome.mirvac.com returned 403 with a 403 control path as well, meaning
+  the edge refuses every path and proves nothing about an MCP server (opaque, not evidence of one). A web
+  search for a Mirvac MCP server, developer API or llms.txt returned nothing from Mirvac. There is no published
+  OpenAPI to derive a candidate tool list from, so this file lists no tools.
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+tools: []
+probes:
+- url: https://www.mirvac.com/.well-known/mcp.json
+  status: 404
+- url: https://www.mirvac.com/AGENTS.md
+  status: 404
+- url: https://7spencer.mirvac.com/mcp
+  status: 403
+  note: control path also 403 (opaque edge), from pre-flight 2026-10-21
+- url: https://firsthome.mirvac.com/mcp
+  status: 403
+  note: control path also 403 (opaque edge), from pre-flight 2026-10-21
